@@ -1,0 +1,16 @@
+[package]
+name = "Dungeon-RNG-auto-master-baiter"
+version = "0.1.0"
+edition = "2021"
+authors = ["Stipulations"]
+
+[profile.release]
+codegen-units = 1
+strip = true
+opt-level = "z"
+lto = true
+panic = "abort"
+
+[dependencies]
+inputbot = "0.6.0"
+colored = "2.1.0"
